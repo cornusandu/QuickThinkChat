@@ -65,7 +65,7 @@ def setup():
         '4. Llama 3.1 (8B)        [SLOW]',
         f'{colorama.Fore.GREEN}5. Llama 3.2 (3B)         [RECOMMENDED]{colorama.Style.RESET_ALL}',
         '6. Llama 3.2 (1B)           [FAST | RECOMMENDED FOR CREATIVE TASKS]',
-        f'{colorama.Style.DIM}{colorama.Fore.RED}7. DialoGPT Medium (354M)    [SLOW | NOT ADVISED]'
+        f'{colorama.Style.DIM}{colorama.Fore.RED}7. DialoGPT Medium (354M)    [SLOW | NOT ADVISED]{colorama.Style.RESET_ALL}'
     ]
     m = {
         1: 'meta-llama/Llama-4-Scout-17B-16E-Instruct',
@@ -95,7 +95,7 @@ def setup():
         except Exception as _:
             pass
 
-    c.clear()
+    os.system('cls || clear')
 
     flush_stdin()  # Because of Python's shitty buffering system for key inputs
 
@@ -126,7 +126,7 @@ def get_config() -> dict[str, str]:
         assert f.readable(), "Uhm this shouldn't have happened (CODE 1)\nPlease open an issue on GItHub (https://github.com/cornusandu/QuickThinkChat)."  # Shouldn't happen, but if it does, program runtime is fucked
         return json.load(f)
 
-c.clear()
+os.system('cls || clear')
 c.rule("QT Chat | Installation")
 c.print("Please wait while we load required models. If this is the first time you're running the script, we will have to download said models. Please wait, this may take a while. (est. time 5-10 mins)")
 time.sleep(0.4)
