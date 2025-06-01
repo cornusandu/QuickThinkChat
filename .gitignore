@@ -3,3 +3,4 @@ apptools.py
 *.json
 .idea/*
 __pycache__/*
+dist/*

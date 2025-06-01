@@ -122,8 +122,8 @@ if not os.path.exists('config.json'):
 
 def get_config() -> dict[str, str]:
     with open('config.json', 'r') as f:
-        assert not f.closed, "Failed to open file. If you're seeing this, please open an issue on GitHub ()"  # Just to be safe
-        assert f.readable(), "Uhm this shouldn't have happened (CODE 1)\nPlease open an issue on GItHub ()."  # Shouldn't happen, but if it does, program runtime is fucked
+        assert not f.closed, "Failed to open file. If you're seeing this, please open an issue on GitHub (https://github.com/cornusandu/QuickThinkChat)"  # Just to be safe
+        assert f.readable(), "Uhm this shouldn't have happened (CODE 1)\nPlease open an issue on GItHub (https://github.com/cornusandu/QuickThinkChat)."  # Shouldn't happen, but if it does, program runtime is fucked
         return json.load(f)
 
 c.clear()
