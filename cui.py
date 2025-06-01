@@ -35,7 +35,7 @@ def flush_stdin():
             msvcrt.getch()
 
 def setup():
-    c.clear()
+    os.system('cls || clear')
     c.rule('QT | Chat')
     c.print("\t\t\t\t\t    Welcome to [bold blue]QuickThink Chat[/]!")
     c.print("\t\t\t\t\t                  [dim]Setup[/]")
@@ -134,7 +134,7 @@ model = get_config()['model']
 TOKEN = get_config()['token']
 use.setup(model, token = TOKEN)
 time.sleep(0.2)
-c.clear()
+os.system('cls || clear')
 
 c.rule("QuickThink Chat")
 c.print("Talk with your chosen AI chatbot, completely offline!")
