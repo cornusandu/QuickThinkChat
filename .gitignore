@@ -2,3 +2,4 @@ apptools.py
 *.kv
 *.json
 .idea/*
+__pycache__/*
