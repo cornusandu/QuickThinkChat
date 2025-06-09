@@ -1,6 +1,5 @@
 from rich.console import Console
 from rich.markdown import Markdown
-import keyengine
 
 c = Console()
 c.rule('QT | Chat')
